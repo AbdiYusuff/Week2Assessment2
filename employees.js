@@ -28,7 +28,7 @@ class Employee {
     }
 
     getSchedule(name, shifts) {
-        console.log(name, shifts)
+        console.log(`${name} works on ${shifts}`)
     }
 
 
@@ -52,8 +52,8 @@ empOne = new Employee("Jess", "weekday mornings, weekday afternoons")
 */
 
 //CODE HERE
-
 getSchedule(empOne)
+
 /*
     Make a copy of the empOne object
     using the spread operator.
@@ -68,7 +68,9 @@ getSchedule(empOne)
 
 //CODE HERE
 
+const empTwo = {...empOne}
 
+let Nick = empOne.name 
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -95,15 +97,15 @@ getSchedule(empOne)
 
 //CODE HERE
 
-class Manager extends Employee {
-    constructor (name, shifts, employees){
-    super(name, shifts)
-    this.employees = employees}
+// class Manager extends Employee {
+//     constructor (name, shifts, employees){
+//     super(name, shifts)
+//     this.employees = employees}
 
-    addEmployee(emp){
-        employeesArray = .push()
-    }
-}
+//     addEmployee(emp){
+//         employeesArray = .push(emp)
+//     }
+// }
 
 /*
     Create a new instance of your class.
